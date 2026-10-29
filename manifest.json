@@ -1,8 +1,8 @@
 {
   "name": "PF1自动角色卡",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "manifest_version": 1,
-  "description": "PF1 角色卡 v5:掷骰弹窗(公开/暗骰+额外加值)、3D 骰子动画与音效、先攻条、法术位/特性游戏内可改、Token 显示 HP/AC。",
+  "description": "PF1 角色卡 v6:Token 先攻 + 顶部悬浮先攻条 + 右键加入先攻;掷骰弹窗/3D 骰子音效;Token 显示 HP/AC。",
   "icon": "https://hbk735710247-wq.github.io/pf1-card/icon.svg",
   "author": "PF1车卡助手",
   "action": {
@@ -11,5 +11,6 @@
     "popover": "https://hbk735710247-wq.github.io/pf1-card/",
     "width": 460,
     "height": 640
-  }
+  },
+  "background_url": "https://hbk735710247-wq.github.io/pf1-card/background.html"
 }

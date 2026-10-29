@@ -1,0 +1,15 @@
+{
+  "name": "PF1自动角色卡",
+  "version": "0.3.0",
+  "manifest_version": 1,
+  "description": "PF1 角色卡 v3:掷骰结果全屏浮层(大数字/骰面/暴击高亮)、快速加值、掷骰记录卡、分页卡面。",
+  "icon": "https://pf1-card-hbk.surge.sh/icon.svg",
+  "author": "PF1车卡助手",
+  "action": {
+    "title": "PF1自动角色卡",
+    "icon": "https://pf1-card-hbk.surge.sh/icon.svg",
+    "popover": "https://pf1-card-hbk.surge.sh/",
+    "width": 460,
+    "height": 640
+  }
+}

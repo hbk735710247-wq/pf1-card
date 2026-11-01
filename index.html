@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PF1角色卡</title>
-  <script type="module" crossorigin src="./assets/main-D9FlZLz8.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/index-B5PTVloH.js">
-  <link rel="modulepreload" crossorigin href="./assets/initShared-yF5ln2Ic.js">
-  <link rel="stylesheet" crossorigin href="./assets/main-bfqzonGU.css">
-</head>
-<body>
-  <div id="app"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PF1角色卡</title>
+    <script>
+      // 兜底:模块脚本若加载/执行失败,这里能看到原因
+      window.__PF1_BOOT__ = true;
+      window.addEventListener("error", function (e) {
+        var el = document.getElementById("boot");
+        if (el) el.textContent = "脚本错误:" + (e.message || e.error || "未知");
+      });
+      window.addEventListener("unhandledrejection", function (e) {
+        var el = document.getElementById("boot");
+        if (el) el.textContent = "脚本异常:" + ((e.reason && (e.reason.stack || e.reason.message)) || e.reason);
+      });
+      setTimeout(function () {
+        var el = document.getElementById("boot");
+        if (el && el.textContent === "插件加载中…") {
+          el.textContent = "模块脚本 5 秒内没有执行(可能被浏览器拦截或缓存了旧文件)。请按 F12 看 Console。";
+        }
+      }, 5000);
+    </script>
+    <script type="module" crossorigin src="./assets/main-D9FlZLz8.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/index-B5PTVloH.js">
+    <link rel="modulepreload" crossorigin href="./assets/initShared-yF5ln2Ic.js">
+    <link rel="stylesheet" crossorigin href="./assets/main-bfqzonGU.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="boot" style="position:fixed;left:0;right:0;top:0;padding:12px;font:13px/1.5 sans-serif;color:#ffd9d9;background:#3a1e22;z-index:99999;">
+      插件加载中…
+    </div>
+  </body>
 </html>

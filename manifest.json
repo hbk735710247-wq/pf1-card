@@ -1,6 +1,6 @@
 {
   "name": "PF1自动角色卡",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "manifest_version": 1,
   "description": "PF1 角色卡 v6:Token 先攻 + 顶部悬浮先攻条 + 右键加入先攻;掷骰弹窗/3D 骰子音效;Token 显示 HP/AC。",
   "icon": "https://hbk735710247-wq.github.io/pf1-card/icon.svg",
